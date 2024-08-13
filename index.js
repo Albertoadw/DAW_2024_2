@@ -10,12 +10,12 @@ app.get('/Alberto',function(req,res){
 })
 
 app.get('/:x', function(req,res){
-    const mensagem = "Oi"+req.parans.x; 
+    const mensagem = "Oi"+req.params.x; 
     res.send()
 })
 
 app.get('/:nome/:sobrenome',function(res,res){
-    const mensagem = "Oi"+req;parans.nome+""+req
+    const mensagem = "Oi"+req.params.nome+""+req.params.sobrenome
     res.send(mensagem)
 })
 
